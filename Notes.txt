@@ -1,0 +1,54 @@
+28 Nov, 2025
+--------------
+# Initilize project
+> npm init -y
+
+# Express to create route (api url)
+# cors (agar api ko frontned ke saat use karege to issue na aaye)
+> npm install express cors
+
+# nodemon to run API in background
+> npm install -D nodemon
+
+# define type is "module" in package json kyuki hum moduler approach use krne ja rahe hai
+# ab server ko run karte hai
+> npm run dev
+
+# config
+isme jo bhi mongodb ki cofiguration ho woh karege
+
+# models
+jo bhi data structure hoga woh define karege
+
+# routes
+isme API end points hoga
+
+# controllers
+jobhi logic hoga woh likhege
+
+# setup mongodb and env file
+>npm install mongoose dotenv
+
+# Start mongodb service
+open new terminal and put this command
+>brew services start mongodb-community
+
+# create db in mongodb
+db name : todo_db
+connection: todo
+
+# update .env file
+MONGO_URI = mongodb://localhost:27017/todo_db
+
+# create db.js in config folder
+
+# modify server.js file
+# 1. import connectDB function and dotenv
+
+# define todo.modiel.js 
+# models means DB me fileds konse konse chahiye
+# like Title, Description & isCompleted
+# NOTE:
+#   1. model ke name me 1st letter Capital hota hai example "Todo".
+#   2. mongodb me directory me auto maticlly "s" end me lagta hai isliye usko "todos" name dete hai.
+#
